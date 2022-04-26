@@ -1,0 +1,294 @@
+
+body {font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0px;
+margin:auto;
+}
+
+.bg-img {
+  /* The image used */
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(img/beach.jpg);
+  min-height: 450px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+  
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+
+.topnav a.active {
+  background-color: #ddd;
+  color: #ddd;
+}
+
+
+.topnav-1 {
+  background-color: purple;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav-1 a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav-1 a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+/*.topnav-1 a.active {
+  background-color: rgb(255, 187, 0);
+  color: black; 
+}*/
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#below_img h3{
+    text-align: center;
+}
+
+#below_img p{
+    text-align: center;
+}
+
+#homecard {
+  background-color: rgb(247, 141, 247);
+  border-radius: 5px;
+  margin: 1em;
+  padding: 1em;
+  width: 30%;
+  height: 30%;
+  justify-content: space-between;
+  flex: auto;
+}
+
+#socials{
+  list-style-type: none;
+}
+#socials a{
+  color: #000000;
+  text-decoration: none;
+}
+#socials img{
+  padding: 1em;
+  vertical-align: middle;
+}
+
+#homecard h2{
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+  border-radius: 1px black;
+}
+
+.footer {
+  background-color: purple;
+}
+
+.footer ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer a{
+  display: block;
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+/* Change the color of links on hover */
+
+
+/* Add a color to the active/current link */
+.footer .active {
+  color: rgb(255, 187, 0);
+  padding: 0%;
+  margin: 0%;
+}
+
+
+/*.mode{
+  
+}*/
+
+.formSection h3{
+  text-align: center;
+  padding-right: 14px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --body-bg: #FFFFFF;
+    --body-color: #000000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #000000;
+    --body-color: #FFFFFF;
+  }
+}
+
+
+p {
+  display: inline-block;
+}
+
+#container{
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: auto;
+  align-items: center;
+  display: flex;
+ }
+
+ #subcontainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ .centeredHeading {
+  text-align: center;
+  padding: 1em 0 1.5em;
+}
+
+#bioName, #bioEmail{
+  display: inline;
+}
+#bioEmail{
+  float: right;
+  margin: 0.2em 2em 0 0;
+  font-size: medium;
+}
+#bioText{ /*can't get the text to not overflow*/
+  width: 100%;
+  word-wrap:break-word;
+  overflow: hidden;
+}
+
+
+.formSection {
+  margin: 
+  1em;
+  padding: 1em;
+  width: 40%;
+  max-width: 400px;
+  box-sizing: border-box;
+  background-color: rgb(247, 141, 247);
+  border-radius: 5px;
+}
+#formRow {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+#formRow input{
+  width: 70%;
+  border-radius: 10px;
+}
+#formButton {
+  background-color: white;
+  color:black;
+}
+#formQuery {
+  display: block ;
+  justify-content: space-around;
+  margin-left: .1em;
+  width: 97%;
+  border-radius: 10px;
+}
+
+#thumbnail{
+  max-width: 64px;
+  max-height: 64px;
+  border-radius: 50%;
+  padding: 1em;
+  vertical-align: middle; 
+}
+
+#individual{
+  display: flex;
+  background-color: rgb(247, 141, 247);
+  border-radius: 5px;
+  margin: 1em;
+  padding: .5em;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#about{
+  left: 0%;
+  right: 0%;
+}
